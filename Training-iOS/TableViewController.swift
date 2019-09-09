@@ -1,24 +1,22 @@
 //
-//  ViewController.swift
+//  TableViewController.swift
 //  Training-iOS
 //
-//  Created by yusaku maki on 2019/08/29.
+//  Created by shouta_tarukawa on 2019/09/09.
 //  Copyright © 2019 yusaku maki. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class TableViewController: UIViewController {
 
     override func viewDidLoad() {
-        
-        
         super.viewDidLoad()
-        
-        
+
         // Do any additional setup after loading the view.
     }
+    
 
+ 
 
 }
-

@@ -14,6 +14,7 @@
 		2047AF412317E2B400AD1CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2047AF3F2317E2B400AD1CC7 /* LaunchScreen.storyboard */; };
 		2047AF4C2317E2B400AD1CC7 /* Training_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2047AF4B2317E2B400AD1CC7 /* Training_iOSTests.swift */; };
 		2047AF572317E2B400AD1CC7 /* Training_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2047AF562317E2B400AD1CC7 /* Training_iOSUITests.swift */; };
+		64539177232658C700C5E074 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64539176232658C700C5E074 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2047AF522317E2B400AD1CC7 /* Training-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Training-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2047AF562317E2B400AD1CC7 /* Training_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training_iOSUITests.swift; sourceTree = "<group>"; };
 		2047AF582317E2B400AD1CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64539176232658C700C5E074 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				2047AF362317E2B300AD1CC7 /* AppDelegate.swift */,
 				2047AF382317E2B300AD1CC7 /* ViewController.swift */,
+				64539176232658C700C5E074 /* TableViewController.swift */,
 				2047AF3A2317E2B300AD1CC7 /* Main.storyboard */,
 				2047AF3D2317E2B400AD1CC7 /* Assets.xcassets */,
 				2047AF3F2317E2B400AD1CC7 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2047AF392317E2B300AD1CC7 /* ViewController.swift in Sources */,
+				64539177232658C700C5E074 /* TableViewController.swift in Sources */,
 				2047AF372317E2B300AD1CC7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
