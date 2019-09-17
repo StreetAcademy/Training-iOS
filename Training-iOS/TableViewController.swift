@@ -12,6 +12,9 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 
     let list = ["研修1","研修2","研修3"]
     
+    @IBOutlet var searchTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -41,8 +44,13 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         
         let ViewController = self.storyboard?.instantiateViewController(withIdentifier: "NextView") as! ViewController
-        
         self.navigationController?.pushViewController(ViewController, animated: true)
     }
+    
+    @IBAction func searchButton(_ sender: Any) {
+    }
+    
+    
+    
     
 }
