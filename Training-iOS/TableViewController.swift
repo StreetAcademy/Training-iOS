@@ -10,6 +10,7 @@ import UIKit
 
 class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    //テーブルセルに表示する文字列
     let list = ["研修1","研修2","研修3"]
     
     @IBOutlet var searchTextField: UITextField!
@@ -49,8 +50,5 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     @IBAction func searchButton(_ sender: Any) {
     }
-    
-    
-    
     
 }
