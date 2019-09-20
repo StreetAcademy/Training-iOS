@@ -14,6 +14,7 @@
 		2047AF412317E2B400AD1CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2047AF3F2317E2B400AD1CC7 /* LaunchScreen.storyboard */; };
 		2047AF4C2317E2B400AD1CC7 /* Training_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2047AF4B2317E2B400AD1CC7 /* Training_iOSTests.swift */; };
 		2047AF572317E2B400AD1CC7 /* Training_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2047AF562317E2B400AD1CC7 /* Training_iOSUITests.swift */; };
+		EF7989772334D8A300AB83B3 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7989762334D8A300AB83B3 /* WebView.swift */; };
 		EF7C1C6B233205730010213C /* ItemSearchResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C1C6A233205730010213C /* ItemSearchResultSet.swift */; };
 		EF7C1C6D23321FC90010213C /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C1C6C23321FC90010213C /* ItemTableViewCell.swift */; };
 		EF7C1C73233229CE0010213C /* SearchItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C1C72233229CE0010213C /* SearchItemTableViewController.swift */; };
@@ -50,6 +51,7 @@
 		2047AF522317E2B400AD1CC7 /* Training-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Training-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2047AF562317E2B400AD1CC7 /* Training_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training_iOSUITests.swift; sourceTree = "<group>"; };
 		2047AF582317E2B400AD1CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7989762334D8A300AB83B3 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		EF7C1C6A233205730010213C /* ItemSearchResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchResultSet.swift; sourceTree = "<group>"; };
 		EF7C1C6C23321FC90010213C /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		EF7C1C72233229CE0010213C /* SearchItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemTableViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				EF7C1C6A233205730010213C /* ItemSearchResultSet.swift */,
 				EF7C1C6C23321FC90010213C /* ItemTableViewCell.swift */,
 				EF7C1C72233229CE0010213C /* SearchItemTableViewController.swift */,
+				EF7989762334D8A300AB83B3 /* WebView.swift */,
 			);
 			path = "Training-iOS";
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF7C1C73233229CE0010213C /* SearchItemTableViewController.swift in Sources */,
+				EF7989772334D8A300AB83B3 /* WebView.swift in Sources */,
 				EF7C1C6D23321FC90010213C /* ItemTableViewCell.swift in Sources */,
 				2047AF392317E2B300AD1CC7 /* ViewController.swift in Sources */,
 				EF7C1C6B233205730010213C /* ItemSearchResultSet.swift in Sources */,
