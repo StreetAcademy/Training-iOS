@@ -19,3 +19,10 @@ print(test)
 if let test = test {
     print(test)
 }
+
+// if letとほぼ同じ。ただ、カッコの中で使えるか、外で使えるか。
+guard let test = test else {
+    print("testはnilだった")
+    fatalError()
+}
+
