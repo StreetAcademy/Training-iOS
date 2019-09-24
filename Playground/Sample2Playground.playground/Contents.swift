@@ -2,12 +2,12 @@ import UIKit
 
 var str = "Hello, playground"
 
-enum JR {
-    case ebisu
-    case shibuya
-    case ikebukuro
-    case mejiro
-    case meguro
+enum JR: String {
+    case ebisu = "恵比寿"
+    case shibuya = "渋谷"
+    case ikebukuro = "池袋"
+    case mejiro = "目白"
+    case meguro = "目黒"
 }
 
 let station: JR = .ebisu
@@ -15,17 +15,5 @@ let station: JR = .ebisu
 let stations: [JR] = [.ebisu, .shibuya, .ikebukuro]
 
 stations.forEach { station in
-    switch station {
-    case .ebisu:
-        print("恵比寿")
-    case .shibuya:
-        print("渋谷")
-    case .ikebukuro:
-        print("池袋")
-    case .mejiro:
-        print("目白")
-    case .meguro:
-        print("目黒")
-    }
+    print(station.rawValue)
 }
-
