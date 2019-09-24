@@ -15,11 +15,7 @@
 // fallthroughは、一つ下の条件式の中（条件式に関係なく）に入る
 for i in 1...100 {
     switch i {
-    case let num where num  % 3 == 0: // 3の倍数
-        fallthrough
-    case let num where num  % 10 == 3: // 1の桁が3の数
-        fallthrough
-    case let num where num >= 30 && num < 40: // 30〜39の間
+    case let num where num % 3 == 0 || num  % 10 == 3 || num >= 30 && num < 40:
         print("バカ")
     default:
         print(i)
