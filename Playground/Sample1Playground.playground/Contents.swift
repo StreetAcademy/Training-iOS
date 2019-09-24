@@ -44,3 +44,19 @@ case (5, "sample"):
 default:
     print("ちがった")
 }
+
+let array = [1,2,3,4,5]
+
+// 普通のfor文
+for num in array {
+    print(num)
+}
+
+// forEach
+array.forEach { num in
+    print(num)
+}
+
+array.forEach {
+    print($0)
+}
