@@ -68,3 +68,12 @@ print("forEach2")
 array.forEach {
     print($0)
 }
+
+// なべあつ課題
+for num in 1...100 {
+    if num % 3 == 0 || num % 10 == 3 || num >= 30 && num < 40 {
+        print("バカ")
+    } else {
+        print(num)
+    }
+}
