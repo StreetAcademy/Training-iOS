@@ -1,26 +1,18 @@
 import UIKit
 
 
-enum TX {
-    case akihabara
-    case asakusa
-    case ibaraki
+enum TX: String {
+    case akihabara = "秋葉原"
+    case asakusa = "浅草"
+    case ibaraki = "茨城"
 }
 
 
 let txStation: TX = .akihabara
 
 let txStations: [TX] = [.akihabara, .asakusa, .ibaraki]
-
 txStations.forEach { txStation in
-    switch txStation {
-    case .akihabara:
-        print("秋葉原")
-    case .asakusa:
-        print("浅草")
-    case .ibaraki:
-        print("茨城")
-    }
-    
+    print(txStation.rawValue)
 }
+    
 
