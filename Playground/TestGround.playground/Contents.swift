@@ -1,5 +1,5 @@
-import UIKit
-
+//import UIKit
+//
 //
 //// if文で 1 ~ 100まで表示 3の倍数と3がつく時バカを表示
 //for i in  1...100 {
@@ -11,15 +11,15 @@ import UIKit
 //    }
 //}
 
-
 // swicth文で1~100までを表示3の倍数と3がつくときバカを表示
+// fallthroughは、一つ下の条件式の中（条件式に関係なく）に入る
 for i in 1...100 {
     switch i {
-    case let num where num  % 3 == 0:
-        print("バカ")
-    case let num where num  % 10 == 3:
-        print("バカ")
-    case let num where num >= 30 && num < 40:
+    case let num where num  % 3 == 0: // 3の倍数
+        fallthrough
+    case let num where num  % 10 == 3: // 1の桁が3の数
+        fallthrough
+    case let num where num >= 30 && num < 40: // 30〜39の間
         print("バカ")
     default:
         print(i)
