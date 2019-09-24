@@ -48,15 +48,23 @@ default:
 let array = [1,2,3,4,5]
 
 // 普通のfor文
+print("普通のfor文")
 for num in array {
     print(num)
 }
 
+print("範囲指定のfor文")
+for num in 1...10 {
+  print(num)
+}
+
 // forEach
+print("forEach1")
 array.forEach { num in
     print(num)
 }
 
+print("forEach2")
 array.forEach {
     print($0)
 }
