@@ -26,3 +26,21 @@ guard let test = test else {
     fatalError()
 }
 
+let number: Int = 5
+
+switch number {
+case 5:
+    print("5だった")
+default:
+    print("ちがった")
+}
+
+let sample: String = "sample"
+
+// swiftのswitchは複数条件を指定できる
+switch (number, sample) {
+case (5, "sample"):
+    print("sample 5 だった")
+default:
+    print("ちがった")
+}
