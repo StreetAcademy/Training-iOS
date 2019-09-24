@@ -45,6 +45,21 @@ default:
     print("ちがった")
 }
 
+// 乱数
+let random = Int.random(in: 0..<10)
+print(random)
+
+// switch文には複数の条件式を加えられる
+switch random {
+case 1:
+    print("1やで")
+case 2:
+    print("2やで")
+default:
+    print("その他やで")
+}
+
+// 配列
 let array = [1,2,3,4,5]
 
 // 普通のfor文
