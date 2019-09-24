@@ -21,3 +21,4 @@ class Tweet {
 var twitter = Tweet(text: "今日はいい天気", favorite: 3, retweetCount: 3, userName: "tarukawa", image: nil)
 print(twitter.text)
 
+

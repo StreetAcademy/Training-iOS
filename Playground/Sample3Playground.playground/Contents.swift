@@ -47,3 +47,4 @@ print(mori.count)
 
 let kobayashi = Apple(count: 10, name: "takeshi")
 print(mori.name)
+
