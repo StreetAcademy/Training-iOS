@@ -10,10 +10,14 @@ import UIKit
 
 class Test2ViewController: UIViewController {
 
+    @IBAction func nextButton(_ sender: Any) {
+        print("pushed")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
 
