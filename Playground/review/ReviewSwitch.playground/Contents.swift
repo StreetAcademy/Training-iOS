@@ -50,12 +50,4 @@ enum Shoes: String {
             return 2500
     }
 }
-    
-let shoesPrices: [Shoes] = [.nike, .adidas, .puma, .converse]
 
-shoesPrices.forEach { Shoes in
-    print("\(shoesPrices.rowvalue): \(Shoes.shoesPrice)")
-    
-    }
-
-}
