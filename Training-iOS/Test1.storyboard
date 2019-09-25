@@ -24,11 +24,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfk-2N-2bS">
+                                <rect key="frame" x="184" y="538.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="AcF-CS-02L" eventType="touchUpInside" id="M1F-ok-m1g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Vfk-2N-2bS" firstAttribute="centerX" secondItem="N0k-gj-g7U" secondAttribute="centerX" id="Ign-oH-pGe"/>
                             <constraint firstItem="kM4-rw-hKD" firstAttribute="centerY" secondItem="N0k-gj-g7U" secondAttribute="centerY" id="aKO-qn-6Gf"/>
                             <constraint firstItem="kM4-rw-hKD" firstAttribute="centerX" secondItem="N0k-gj-g7U" secondAttribute="centerX" id="mBf-py-b8E"/>
+                            <constraint firstItem="Vfk-2N-2bS" firstAttribute="top" secondItem="kM4-rw-hKD" secondAttribute="bottom" constant="80" id="qW6-ii-yjU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TP5-wi-S5J"/>
                     </view>
