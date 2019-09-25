@@ -16,6 +16,7 @@
 		2047AF572317E2B400AD1CC7 /* Training_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2047AF562317E2B400AD1CC7 /* Training_iOSUITests.swift */; };
 		EF7989772334D8A300AB83B3 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7989762334D8A300AB83B3 /* WebView.swift */; };
 		EF798979233B58C000AB83B3 /* Test1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF798978233B58C000AB83B3 /* Test1.storyboard */; };
+		EF79897B233B5A2C00AB83B3 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF79897A233B5A2C00AB83B3 /* TestViewController.swift */; };
 		EF7C1C6B233205730010213C /* ItemSearchResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C1C6A233205730010213C /* ItemSearchResultSet.swift */; };
 		EF7C1C6D23321FC90010213C /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C1C6C23321FC90010213C /* ItemTableViewCell.swift */; };
 		EF7C1C73233229CE0010213C /* SearchItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C1C72233229CE0010213C /* SearchItemTableViewController.swift */; };
@@ -54,6 +55,7 @@
 		2047AF582317E2B400AD1CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF7989762334D8A300AB83B3 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		EF798978233B58C000AB83B3 /* Test1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test1.storyboard; sourceTree = "<group>"; };
+		EF79897A233B5A2C00AB83B3 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		EF7C1C6A233205730010213C /* ItemSearchResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchResultSet.swift; sourceTree = "<group>"; };
 		EF7C1C6C23321FC90010213C /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		EF7C1C72233229CE0010213C /* SearchItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemTableViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				2047AF382317E2B300AD1CC7 /* ViewController.swift */,
 				2047AF3A2317E2B300AD1CC7 /* Main.storyboard */,
 				EF798978233B58C000AB83B3 /* Test1.storyboard */,
+				EF79897A233B5A2C00AB83B3 /* TestViewController.swift */,
 				2047AF3D2317E2B400AD1CC7 /* Assets.xcassets */,
 				2047AF3F2317E2B400AD1CC7 /* LaunchScreen.storyboard */,
 				2047AF422317E2B400AD1CC7 /* Info.plist */,
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF79897B233B5A2C00AB83B3 /* TestViewController.swift in Sources */,
 				EF7C1C73233229CE0010213C /* SearchItemTableViewController.swift in Sources */,
 				EF7989772334D8A300AB83B3 /* WebView.swift in Sources */,
 				EF7C1C6D23321FC90010213C /* ItemTableViewCell.swift in Sources */,
