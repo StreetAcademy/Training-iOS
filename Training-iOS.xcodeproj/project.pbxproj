@@ -17,6 +17,9 @@
 		EF7989772334D8A300AB83B3 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7989762334D8A300AB83B3 /* WebView.swift */; };
 		EF798979233B58C000AB83B3 /* Test1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF798978233B58C000AB83B3 /* Test1.storyboard */; };
 		EF79897B233B5A2C00AB83B3 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF79897A233B5A2C00AB83B3 /* TestViewController.swift */; };
+		EF79897D233B5CD800AB83B3 /* Test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF79897C233B5CD800AB83B3 /* Test2ViewController.swift */; };
+		EF79897F233B5EA600AB83B3 /* Test2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF79897E233B5EA600AB83B3 /* Test2.storyboard */; };
+		EF798981233B601700AB83B3 /* Test2NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF798980233B601700AB83B3 /* Test2NextViewController.swift */; };
 		EF7C1C6B233205730010213C /* ItemSearchResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C1C6A233205730010213C /* ItemSearchResultSet.swift */; };
 		EF7C1C6D23321FC90010213C /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C1C6C23321FC90010213C /* ItemTableViewCell.swift */; };
 		EF7C1C73233229CE0010213C /* SearchItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C1C72233229CE0010213C /* SearchItemTableViewController.swift */; };
@@ -56,6 +59,9 @@
 		EF7989762334D8A300AB83B3 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		EF798978233B58C000AB83B3 /* Test1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test1.storyboard; sourceTree = "<group>"; };
 		EF79897A233B5A2C00AB83B3 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		EF79897C233B5CD800AB83B3 /* Test2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
+		EF79897E233B5EA600AB83B3 /* Test2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test2.storyboard; sourceTree = "<group>"; };
+		EF798980233B601700AB83B3 /* Test2NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2NextViewController.swift; sourceTree = "<group>"; };
 		EF7C1C6A233205730010213C /* ItemSearchResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchResultSet.swift; sourceTree = "<group>"; };
 		EF7C1C6C23321FC90010213C /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		EF7C1C72233229CE0010213C /* SearchItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemTableViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +127,9 @@
 				EF7C1C6C23321FC90010213C /* ItemTableViewCell.swift */,
 				EF7C1C72233229CE0010213C /* SearchItemTableViewController.swift */,
 				EF7989762334D8A300AB83B3 /* WebView.swift */,
+				EF79897C233B5CD800AB83B3 /* Test2ViewController.swift */,
+				EF79897E233B5EA600AB83B3 /* Test2.storyboard */,
+				EF798980233B601700AB83B3 /* Test2NextViewController.swift */,
 			);
 			path = "Training-iOS";
 			sourceTree = "<group>";
@@ -251,6 +260,7 @@
 				2047AF412317E2B400AD1CC7 /* LaunchScreen.storyboard in Resources */,
 				2047AF3E2317E2B400AD1CC7 /* Assets.xcassets in Resources */,
 				2047AF3C2317E2B300AD1CC7 /* Main.storyboard in Resources */,
+				EF79897F233B5EA600AB83B3 /* Test2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +288,10 @@
 				EF79897B233B5A2C00AB83B3 /* TestViewController.swift in Sources */,
 				EF7C1C73233229CE0010213C /* SearchItemTableViewController.swift in Sources */,
 				EF7989772334D8A300AB83B3 /* WebView.swift in Sources */,
+				EF798981233B601700AB83B3 /* Test2NextViewController.swift in Sources */,
 				EF7C1C6D23321FC90010213C /* ItemTableViewCell.swift in Sources */,
 				2047AF392317E2B300AD1CC7 /* ViewController.swift in Sources */,
+				EF79897D233B5CD800AB83B3 /* Test2ViewController.swift in Sources */,
 				EF7C1C6B233205730010213C /* ItemSearchResultSet.swift in Sources */,
 				2047AF372317E2B300AD1CC7 /* AppDelegate.swift in Sources */,
 			);
