@@ -233,7 +233,9 @@ do {
             // itemsのfull_name取得
             // itemsのwatchers_count取得
             if let htmlUrl = item["html_url"] as? String {
-                let url = URL(string: htmlUrl)
+                if let url = URL(string: htmlUrl) {
+                    print(url)
+                }
             }
         }
     }
