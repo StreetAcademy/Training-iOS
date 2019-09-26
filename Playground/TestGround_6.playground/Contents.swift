@@ -82,6 +82,7 @@ do {
         print(total_count)
     }
     
+    // itemsのfull_name取得
     if let items = array["items"] as? [[String: Any]] {
         items.forEach { item in
             if let fullName = item["full_name"] as? String {
@@ -89,6 +90,33 @@ do {
             }
         }
     }
+    
+    // itemsのwatchers_count取得
+    if let items2 = array["items"] as? [[String: Any]] {
+        items2.forEach{ item in
+            if let wathersCount = item["watchers_count"] as? Int {
+                print("wathersCount： \(wathersCount)")
+            }
+        }
+    }
+    // itemsのlanguageを取得
+    if let items3 = array["items"] as? [[String: Any]] {
+        items3.forEach { item in
+            if let language = item["language"] as? String {
+                print("language：\(language)")
+            }
+        }
+    }
+    
+    // itemsのhas_issueを取得
+    if let items4 = array["items"] as? [[String: Any]] {
+        items4.forEach { item in
+            if let hasIssues = item["has_issues"] as? Bool {
+                print("has_issues：\(hasIssues)")
+            }
+        }
+    }
+    
     //    print(jsonArray)
 } catch let error {
     print(error)
