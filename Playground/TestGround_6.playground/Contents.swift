@@ -3,6 +3,7 @@ import UIKit
 let dict = ["car":4, "bike":2]
 
 let json = """
+
 {
 "total_count": 153139,
 "incomplete_results": false,
@@ -222,8 +223,8 @@ do {
     guard let array = jsonArray else { fatalError() }
     
     // profileの中身は[Key String: Value String]型
-    if let profile = array["profile"] as? [String: String] {
-        print(profile["area"]!)
+    if let total_count = array["total_count"] as? Int {
+        print(total_count)
     }
     
     //    print(jsonArray)
