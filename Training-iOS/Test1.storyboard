@@ -51,6 +51,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="9nz-jR-RPt"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="backButton" destination="2JQ-Zr-iTN" id="UQ9-WL-S9K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jp-6x-kQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
