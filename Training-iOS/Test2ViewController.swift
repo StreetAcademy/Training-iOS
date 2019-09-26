@@ -12,12 +12,10 @@ class Test2ViewController: UIViewController {
 
     @IBAction func nextButton(_ sender: Any) {
         print("pushed")
+        let storyboard = UIStoryboard(name: "Test3", bundle: nil)
         
-        // ストーリーボードを定義する
-        let storyboard = UIStoryboard(name: "Test1", bundle: nil)
-        
-        // 横からpushして画面遷移する
-        if let viewController = storyboard.instantiateViewController(withIdentifier: "TestViewController") as? TestViewController {
+        // 下からpushして画面遷移する
+        if let viewController = storyboard.instantiateViewController(withIdentifier: "Test3ViewController") as? Test3ViewController {
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }

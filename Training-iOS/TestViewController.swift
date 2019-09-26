@@ -14,14 +14,20 @@ class TestViewController: UIViewController {
         // ストーリーボードを定義する
         let storyboard = UIStoryboard(name: "Test2", bundle: nil)
         
-        // 下からpushして画面遷移する
         if let viewController = storyboard.instantiateViewController(withIdentifier: "Test2ViewController") as? Test2ViewController {
-            let navigationController = UINavigationController(rootViewController: viewController)
-            self.present(navigationController, animated: true, completion: nil)
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
-
+    
+    @IBAction func backButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Test3", bundle: nil)
+        if storyboard.instantiateViewController(withIdentifier: "Test3ViewController") is Test3ViewController {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
 }
