@@ -3,12 +3,15 @@ import UIKit
 let dict = ["car":4, "bike":2]
 
 let json = """
+
 {
 "name" : "Munesada",
-"age" : 32
+"age" : 32,
+"profile": {
+"area": "tokyo"
+}
 }
 """
-
 do {
     // data型に変換
     guard let jsonData = json.data(using: .utf8) else { fatalError() }
@@ -16,9 +19,12 @@ do {
     let jsonArray = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Any]
     // jsonArrayのoptionalをなくす
     guard let array = jsonArray else { fatalError() }
-    if let age = array["name"] as? String {
-        print(age)
+    
+    // profileの中身は[Key String: Value String]型 
+    if let profile = array["profile"] as? [String: String] {
+        print(profile["area"]!)
     }
+    
     //    print(jsonArray)
 } catch let error {
     print(error)
