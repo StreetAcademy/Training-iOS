@@ -29,17 +29,59 @@ let task: URLSessionTask = session.dataTask(with: url) { data, urlResponse, erro
             print("dataはJSONの型じゃなかった")
             return
         }
-        if let incomplete_results = jsonArray["incomplete_results"] as? Bool {
-            print("incomplete_resultsは \(incomplete_results)")
+        if let items = jsonArray["items"] as? [[String: Any]] {
+            items.forEach {
+                item in
+                if let id = item["id"] as? Int {
+                    print("idは \(id)")
+                }
+            }
         } else {
-            print("incomplete_resultsはBoolじゃなかった")
+            print("idはIntじゃなかった")
         }
+        
+        if let items = jsonArray["items"] as? [[String: Any]] {
+            items.forEach {
+                item in
+                if let fullName = item["full_name"] as? String {
+                    print("full_nameは \(fullName)")
+                }
+            }
+        } else {
+            print("fullNameはBoolじゃなかった")
+        }
+        
+        if let items = jsonArray["items"] as? [[String: Any]] {
+            items.forEach {
+                item in
+                if let owner = item["owner"] as? [String: Any] {
+                    if let avatarUrl = owner["avatar_url"] as? String {
+                        let avatarUrlCast = URL(string: avatarUrl)
+                        avatarUrlCast
+                    }
+                }
+            }
+            
+        } else {
+            print("avatarUrlはURLじゃなかった")
+        }
+        
+        if let items = jsonArray["items"] as? [[String: Any]] {
+            items.forEach {
+                item in
+                if let srtargazersCount = item["stargazers_count"] as? Int {
+                    print("stargazers_countは \(srtargazersCount)")
+                }
+            }
+        } else {
+            print("fullNameはBoolじゃなかった")
+        }
+        
         
     } catch let error {
         print(error)
         return
     }
-
     print("sessionが終わった")
 }
 
