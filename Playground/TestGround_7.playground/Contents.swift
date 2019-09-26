@@ -232,16 +232,10 @@ do {
         items.forEach { item in
             // itemsのfull_name取得
             // itemsのwatchers_count取得
-            if let fullName = item["full_name"] as? String,
-                let wathersCount = item["watchers_count"] as? Int,
-                // itemsのlanguageを取得
-                let language = item["language"] as? String,
-                // itemsのhas_issueを取得
-                let hasIssues = item["has_issues"] as? Bool {
-                print("fullName：\(fullName)")
-                print("wathersCount： \(wathersCount)")
-                print("language：\(language)")
-                print("has_issues：\(hasIssues)")
+            if let owner = item["owner"] as? [String: Any] {
+                if let id = owner["id"] as? Int {
+                print("Owner：\(id)")
+                }
             }
         }
     }
