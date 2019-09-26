@@ -239,7 +239,7 @@ do {
             }
         }
     }
-    
+
     //    print(jsonArray)
 } catch let error {
     print(error)
