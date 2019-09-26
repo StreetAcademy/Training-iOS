@@ -12,7 +12,12 @@ do {
     guard let jsonData = json.data(using: .utf8) else { fatalError() }
     // data型から[String: Any]に変換する
     let jsonArray = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Any]
-    print(jsonArray)
+    // jsonArrayのoptionalをなくす
+    guard let array = jsonArray else { fatalError() }
+    if let age = array["age"] as? Int {
+        print(age)
+    }
+//    print(jsonArray)
 } catch let error {
     print(error)
 }
