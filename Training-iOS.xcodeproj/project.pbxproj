@@ -19,6 +19,8 @@
 		EF79897B233B5A2C00AB83B3 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF79897A233B5A2C00AB83B3 /* TestViewController.swift */; };
 		EF79897D233B5CD800AB83B3 /* Test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF79897C233B5CD800AB83B3 /* Test2ViewController.swift */; };
 		EF79897F233B5EA600AB83B3 /* Test2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF79897E233B5EA600AB83B3 /* Test2.storyboard */; };
+		EF798983233C4D3800AB83B3 /* Test3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF798982233C4D3700AB83B3 /* Test3.storyboard */; };
+		EF798985233C4D5400AB83B3 /* Test3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF798984233C4D5400AB83B3 /* Test3ViewController.swift */; };
 		EF7C1C6B233205730010213C /* ItemSearchResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C1C6A233205730010213C /* ItemSearchResultSet.swift */; };
 		EF7C1C6D23321FC90010213C /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C1C6C23321FC90010213C /* ItemTableViewCell.swift */; };
 		EF7C1C73233229CE0010213C /* SearchItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C1C72233229CE0010213C /* SearchItemTableViewController.swift */; };
@@ -60,6 +62,8 @@
 		EF79897A233B5A2C00AB83B3 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		EF79897C233B5CD800AB83B3 /* Test2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
 		EF79897E233B5EA600AB83B3 /* Test2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test2.storyboard; sourceTree = "<group>"; };
+		EF798982233C4D3700AB83B3 /* Test3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test3.storyboard; sourceTree = "<group>"; };
+		EF798984233C4D5400AB83B3 /* Test3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test3ViewController.swift; sourceTree = "<group>"; };
 		EF7C1C6A233205730010213C /* ItemSearchResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchResultSet.swift; sourceTree = "<group>"; };
 		EF7C1C6C23321FC90010213C /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		EF7C1C72233229CE0010213C /* SearchItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemTableViewController.swift; sourceTree = "<group>"; };
@@ -116,8 +120,6 @@
 				2047AF362317E2B300AD1CC7 /* AppDelegate.swift */,
 				2047AF382317E2B300AD1CC7 /* ViewController.swift */,
 				2047AF3A2317E2B300AD1CC7 /* Main.storyboard */,
-				EF798978233B58C000AB83B3 /* Test1.storyboard */,
-				EF79897A233B5A2C00AB83B3 /* TestViewController.swift */,
 				2047AF3D2317E2B400AD1CC7 /* Assets.xcassets */,
 				2047AF3F2317E2B400AD1CC7 /* LaunchScreen.storyboard */,
 				2047AF422317E2B400AD1CC7 /* Info.plist */,
@@ -125,8 +127,12 @@
 				EF7C1C6C23321FC90010213C /* ItemTableViewCell.swift */,
 				EF7C1C72233229CE0010213C /* SearchItemTableViewController.swift */,
 				EF7989762334D8A300AB83B3 /* WebView.swift */,
-				EF79897C233B5CD800AB83B3 /* Test2ViewController.swift */,
+				EF798978233B58C000AB83B3 /* Test1.storyboard */,
+				EF79897A233B5A2C00AB83B3 /* TestViewController.swift */,
 				EF79897E233B5EA600AB83B3 /* Test2.storyboard */,
+				EF79897C233B5CD800AB83B3 /* Test2ViewController.swift */,
+				EF798982233C4D3700AB83B3 /* Test3.storyboard */,
+				EF798984233C4D5400AB83B3 /* Test3ViewController.swift */,
 			);
 			path = "Training-iOS";
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF798983233C4D3800AB83B3 /* Test3.storyboard in Resources */,
 				EF798979233B58C000AB83B3 /* Test1.storyboard in Resources */,
 				2047AF412317E2B400AD1CC7 /* LaunchScreen.storyboard in Resources */,
 				2047AF3E2317E2B400AD1CC7 /* Assets.xcassets in Resources */,
@@ -289,6 +296,7 @@
 				2047AF392317E2B300AD1CC7 /* ViewController.swift in Sources */,
 				EF79897D233B5CD800AB83B3 /* Test2ViewController.swift in Sources */,
 				EF7C1C6B233205730010213C /* ItemSearchResultSet.swift in Sources */,
+				EF798985233C4D5400AB83B3 /* Test3ViewController.swift in Sources */,
 				2047AF372317E2B300AD1CC7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
