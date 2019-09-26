@@ -19,6 +19,7 @@ class TestViewController: UIViewController {
         }
     }
     
+    // Test1に戻る
     @IBAction func backButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Test3", bundle: nil)
         if storyboard.instantiateViewController(withIdentifier: "Test3ViewController") is Test3ViewController {
