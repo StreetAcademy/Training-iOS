@@ -223,10 +223,10 @@ do {
     // jsonArrayのoptionalをなくす
     guard let array = jsonArray else { fatalError() }
     
-    // profileの中身は[Key String: Value String]型
-    //    if let total_count = array["total_count"] as? Int {
-    //        print(total_count)
-    //    }
+    // profileの中身は[Key String: Valuef String]型
+        if let total_count = array["total_count"] as? Int {
+            print(total_count)
+        }
     
     if let items = array["items"] as? [[String: Any]] {
         items.forEach { item in
@@ -245,6 +245,7 @@ do {
             }
         }
     }
+    
     
     //    print(jsonArray)
 } catch let error {

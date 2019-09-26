@@ -232,16 +232,16 @@ do {
         items.forEach { item in
             // itemsのfull_name取得
             // itemsのwatchers_count取得
-            if let owner = item["owner"] as? [String: Any] {
-                if let id = owner["id"] as? Int {
-                print("Owner：\(id)")
-                }
+            if let htmlUrl = item["html_url"] as? String {
+                let url = URL(string: htmlUrl)
             }
         }
     }
+    
 
     //    print(jsonArray)
 } catch let error {
     print(error)
 }
+
 
