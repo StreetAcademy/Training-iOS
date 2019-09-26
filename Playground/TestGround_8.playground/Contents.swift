@@ -29,10 +29,10 @@ let task: URLSessionTask = session.dataTask(with: url) { data, urlResponse, erro
             print("dataはJSONの型じゃなかった")
             return
         }
-        if let totalCount = jsonArray["total_count"] as? Int {
-            print("totalCountは \(totalCount)")
+        if let incomplete_results = jsonArray["incomplete_results"] as? Bool {
+            print("incomplete_resultsは \(incomplete_results)")
         } else {
-            print("total_countはIntじゃなかった")
+            print("incomplete_resultsはBoolじゃなかった")
         }
         
     } catch let error {
