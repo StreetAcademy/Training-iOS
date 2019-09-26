@@ -218,6 +218,7 @@ let json = """
 do {
     // data型に変換
     guard let jsonData = json.data(using: .utf8) else { fatalError() }
+    jsonData
     // data型から[String: Any]に変換する Jsonの中身がStringもIntもあるので
     let jsonArray = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Any]
     // jsonArrayのoptionalをなくす
