@@ -10,6 +10,8 @@ import UIKit
 
 class TestViewController: UIViewController {
 
+    @IBOutlet weak var backButton: UIButton!
+
     @IBAction func clickButton(_ sender: Any) {
         // ストーリーボードを定義する
         let storyboard = UIStoryboard(name: "Test2", bundle: nil)
@@ -25,9 +27,14 @@ class TestViewController: UIViewController {
             self.dismiss(animated: true, completion: nil)
         }
     }
-    
+
+    // https://paranishian.hateblo.jp/entry/objc/detect-viewcontroller-modal-or-push
     override func viewDidLoad() {
         super.viewDidLoad()
+        if presentingViewController == nil {
+            backButton.isHidden = true
+        } else {
+            backButton.isHidden = false
+        }
     }
-    
 }
