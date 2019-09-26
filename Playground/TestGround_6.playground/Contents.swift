@@ -16,24 +16,24 @@ let json = """
 "full_name": "apple/swift",
 "private": false,
 "owner": {
-"login": "apple",
-"id": 10639145,
-"node_id": "MDEyOk9yZ2FuaXphdGlvbjEwNjM5MTQ1",
-"avatar_url": "https://avatars0.githubusercontent.com/u/10639145?v=4",
-"gravatar_id": "",
-"url": "https://api.github.com/users/apple",
-"html_url": "https://github.com/apple",
-"followers_url": "https://api.github.com/users/apple/followers",
-"following_url": "https://api.github.com/users/apple/following{/other_user}",
-"gists_url": "https://api.github.com/users/apple/gists{/gist_id}",
-"starred_url": "https://api.github.com/users/apple/starred{/owner}{/repo}",
-"subscriptions_url": "https://api.github.com/users/apple/subscriptions",
-"organizations_url": "https://api.github.com/users/apple/orgs",
-"repos_url": "https://api.github.com/users/apple/repos",
-"events_url": "https://api.github.com/users/apple/events{/privacy}",
-"received_events_url": "https://api.github.com/users/apple/received_events",
-"type": "Organization",
-"site_admin": false
+    "login": "apple",
+    "id": 10639145,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjEwNjM5MTQ1",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10639145?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apple",
+    "html_url": "https://github.com/apple",
+    "followers_url": "https://api.github.com/users/apple/followers",
+    "following_url": "https://api.github.com/users/apple/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apple/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apple/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apple/subscriptions",
+    "organizations_url": "https://api.github.com/users/apple/orgs",
+    "repos_url": "https://api.github.com/users/apple/repos",
+    "events_url": "https://api.github.com/users/apple/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apple/received_events",
+    "type": "Organization",
+    "site_admin": false
 },
 "html_url": "https://github.com/apple/swift",
 "description": "The Swift Programming Language",
@@ -245,6 +245,7 @@ do {
             }
         }
     }
+    
     
     
     //    print(jsonArray)
