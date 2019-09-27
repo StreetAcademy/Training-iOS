@@ -32,15 +32,26 @@
                                     <action selector="nextButton:" destination="nVK-s7-61p" eventType="touchUpInside" id="U6s-A3-To7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ge-JE-7LJ">
+                                <rect key="frame" x="186" y="337" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="opY-uy-RiK" firstAttribute="centerX" secondItem="Pcm-Ax-UE4" secondAttribute="centerX" id="Dbs-xc-HAK"/>
+                            <constraint firstItem="opY-uy-RiK" firstAttribute="top" secondItem="0ge-JE-7LJ" secondAttribute="bottom" constant="80" id="Vzy-pS-7gI"/>
+                            <constraint firstItem="0ge-JE-7LJ" firstAttribute="centerX" secondItem="Pcm-Ax-UE4" secondAttribute="centerX" id="ecS-Hp-Bda"/>
                             <constraint firstItem="opY-uy-RiK" firstAttribute="centerY" secondItem="Pcm-Ax-UE4" secondAttribute="centerY" id="ixa-Nk-fHy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yXR-QQ-vzb"/>
                     </view>
                     <navigationItem key="navigationItem" id="USx-be-5qd"/>
+                    <connections>
+                        <outlet property="textUILable" destination="0ge-JE-7LJ" id="7e9-zm-OuW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8Z-uF-pf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

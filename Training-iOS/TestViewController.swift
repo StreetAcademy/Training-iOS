@@ -9,14 +9,19 @@
 import UIKit
 
 class TestViewController: UIViewController {
-
+    
+    @IBOutlet weak var sampleTextField: UITextField!
+    
     @IBOutlet weak var backButton: UIButton!
-
+    
     @IBAction func clickButton(_ sender: Any) {
-        // ストーリーボードを定義する
         let storyboard = UIStoryboard(name: "Test2", bundle: nil)
-        
-        if let viewController = storyboard.instantiateViewController(withIdentifier: "Test2ViewController") as? Test2ViewController {
+        if let viewController =
+            storyboard.instantiateViewController(withIdentifier: "Test2ViewController") as? Test2ViewController {
+            guard let text = sampleTextField.text else {
+                return
+            }
+            viewController.text = text
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
@@ -28,7 +33,7 @@ class TestViewController: UIViewController {
             self.dismiss(animated: true, completion: nil)
         }
     }
-
+    
     // https://paranishian.hateblo.jp/entry/objc/detect-viewcontroller-modal-or-push
     override func viewDidLoad() {
         super.viewDidLoad()
