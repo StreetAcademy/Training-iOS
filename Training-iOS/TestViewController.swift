@@ -8,8 +8,24 @@
 
 import UIKit
 
+struct Profile {
+    let name: String
+    let address: String
+    let gender: String
+    let age: String
+    let birthday: String
+
+    init(name: String, address: String, gender: String, age: String, birthday: String) {
+        self.name = name
+        self.address = address
+        self.gender = gender
+        self.age = age
+        self.birthday = birthday
+    }
+}
+
+
 class TestViewController: UIViewController {
-    
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
@@ -23,11 +39,12 @@ class TestViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Test2", bundle: nil)
         if let viewController =
             storyboard.instantiateViewController(withIdentifier: "Test2ViewController") as? Test2ViewController {
-            viewController.text1 = nameTextField.text ?? "no input"
-            viewController.text2 = addressTextField.text ?? "no input"
-            viewController.text3 = genderTextField.text ?? "no input"
-            viewController.text4 = ageTextField.text ?? "no input"
-            viewController.text5 = birthdayTextField.text ?? "no input"
+            let profile: Profile = Profile(name: nameTextField.text ?? "no input",
+                                           address: addressTextField.text ?? "no input",
+                                           gender: genderTextField.text ?? "no input",
+                                           age: ageTextField.text ?? "no input",
+                                           birthday: birthdayTextField.text ?? "no input")
+            viewController.profile = profile
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }

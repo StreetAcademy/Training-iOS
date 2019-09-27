@@ -10,11 +10,7 @@ import UIKit
 
 class Test2ViewController: UIViewController {
     
-    var text1: String = ""
-    var text2: String = ""
-    var text3: String = ""
-    var text4: String = ""
-    var text5: String = ""
+    var profile: Profile?
 
     @IBOutlet weak var text1Label: UILabel!
     @IBOutlet weak var text2Label: UILabel!
@@ -34,10 +30,10 @@ class Test2ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        text1Label.text = text1
-        text2Label.text = text2
-        text3Label.text = text3
-        text4Label.text = text4
-        text5Label.text = text5
+        text1Label.text = profile?.name
+        text2Label.text = profile?.address
+        text3Label.text = profile?.gender
+        text4Label.text = profile?.address
+        text5Label.text = profile?.birthday
     }
 }
