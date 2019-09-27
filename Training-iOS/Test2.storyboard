@@ -32,8 +32,32 @@
                                     <action selector="nextButton:" destination="nVK-s7-61p" eventType="touchUpInside" id="U6s-A3-To7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ge-JE-7LJ">
-                                <rect key="frame" x="186" y="337" width="42" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ge-JE-7LJ">
+                                <rect key="frame" x="183.5" y="356" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdH-Im-FS7">
+                                <rect key="frame" x="185" y="234.5" width="44" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APb-pJ-0SX">
+                                <rect key="frame" x="183.5" y="315.5" width="47" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHy-sd-hFu">
+                                <rect key="frame" x="184" y="397" width="46.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4D-QV-Si9">
+                                <rect key="frame" x="184" y="275" width="46.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,16 +65,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="c4D-QV-Si9" firstAttribute="top" secondItem="NdH-Im-FS7" secondAttribute="bottom" constant="20" id="7F7-bP-gji"/>
+                            <constraint firstItem="APb-pJ-0SX" firstAttribute="centerX" secondItem="Pcm-Ax-UE4" secondAttribute="centerX" id="Boz-4l-PGi"/>
                             <constraint firstItem="opY-uy-RiK" firstAttribute="centerX" secondItem="Pcm-Ax-UE4" secondAttribute="centerX" id="Dbs-xc-HAK"/>
-                            <constraint firstItem="opY-uy-RiK" firstAttribute="top" secondItem="0ge-JE-7LJ" secondAttribute="bottom" constant="80" id="Vzy-pS-7gI"/>
-                            <constraint firstItem="0ge-JE-7LJ" firstAttribute="centerX" secondItem="Pcm-Ax-UE4" secondAttribute="centerX" id="ecS-Hp-Bda"/>
+                            <constraint firstItem="0ge-JE-7LJ" firstAttribute="centerX" secondItem="Pcm-Ax-UE4" secondAttribute="centerX" id="Gux-FA-xbD"/>
+                            <constraint firstItem="c4D-QV-Si9" firstAttribute="centerX" secondItem="Pcm-Ax-UE4" secondAttribute="centerX" id="TqH-Sc-OeG"/>
+                            <constraint firstItem="APb-pJ-0SX" firstAttribute="top" secondItem="c4D-QV-Si9" secondAttribute="bottom" constant="20" id="YKH-El-uKS"/>
+                            <constraint firstItem="NdH-Im-FS7" firstAttribute="centerX" secondItem="Pcm-Ax-UE4" secondAttribute="centerX" id="YhP-am-RxA"/>
+                            <constraint firstItem="gHy-sd-hFu" firstAttribute="centerX" secondItem="Pcm-Ax-UE4" secondAttribute="centerX" id="cba-nf-y7Q"/>
                             <constraint firstItem="opY-uy-RiK" firstAttribute="centerY" secondItem="Pcm-Ax-UE4" secondAttribute="centerY" id="ixa-Nk-fHy"/>
+                            <constraint firstItem="gHy-sd-hFu" firstAttribute="centerX" secondItem="Pcm-Ax-UE4" secondAttribute="centerX" id="kWr-e0-keB"/>
+                            <constraint firstItem="0ge-JE-7LJ" firstAttribute="top" secondItem="APb-pJ-0SX" secondAttribute="bottom" constant="20" id="mEL-Bo-5nv"/>
+                            <constraint firstItem="opY-uy-RiK" firstAttribute="top" secondItem="gHy-sd-hFu" secondAttribute="bottom" constant="20" id="mU2-QS-SCE"/>
+                            <constraint firstItem="gHy-sd-hFu" firstAttribute="top" secondItem="0ge-JE-7LJ" secondAttribute="bottom" constant="20" id="zaQ-31-ugo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yXR-QQ-vzb"/>
                     </view>
                     <navigationItem key="navigationItem" id="USx-be-5qd"/>
                     <connections>
-                        <outlet property="textUILable" destination="0ge-JE-7LJ" id="7e9-zm-OuW"/>
+                        <outlet property="text1Label" destination="NdH-Im-FS7" id="Y9l-Nj-HoJ"/>
+                        <outlet property="text2Label" destination="c4D-QV-Si9" id="BNw-bx-V7L"/>
+                        <outlet property="text3Label" destination="APb-pJ-0SX" id="eO9-Rr-ssP"/>
+                        <outlet property="text4Label" destination="0ge-JE-7LJ" id="Udr-WU-gx1"/>
+                        <outlet property="text5Label" destination="gHy-sd-hFu" id="cSc-ia-vGR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8Z-uF-pf7" userLabel="First Responder" sceneMemberID="firstResponder"/>

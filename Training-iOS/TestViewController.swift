@@ -10,18 +10,24 @@ import UIKit
 
 class TestViewController: UIViewController {
     
-    @IBOutlet weak var sampleTextField: UITextField!
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var genderTextField: UITextField!
+    @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var birthdayTextField: UITextField!
     
     @IBOutlet weak var backButton: UIButton!
-    
+
     @IBAction func clickButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Test2", bundle: nil)
         if let viewController =
             storyboard.instantiateViewController(withIdentifier: "Test2ViewController") as? Test2ViewController {
-            guard let text = sampleTextField.text else {
-                return
-            }
-            viewController.text = text
+            viewController.text1 = nameTextField.text ?? "no input"
+            viewController.text2 = addressTextField.text ?? "no input"
+            viewController.text3 = genderTextField.text ?? "no input"
+            viewController.text4 = ageTextField.text ?? "no input"
+            viewController.text5 = birthdayTextField.text ?? "no input"
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }

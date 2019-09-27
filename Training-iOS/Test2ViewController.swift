@@ -10,11 +10,18 @@ import UIKit
 
 class Test2ViewController: UIViewController {
     
-    var text: String = ""
-    
-    @IBOutlet weak var textUILable: UILabel!
-    
-    
+    var text1: String = ""
+    var text2: String = ""
+    var text3: String = ""
+    var text4: String = ""
+    var text5: String = ""
+
+    @IBOutlet weak var text1Label: UILabel!
+    @IBOutlet weak var text2Label: UILabel!
+    @IBOutlet weak var text3Label: UILabel!
+    @IBOutlet weak var text4Label: UILabel!
+    @IBOutlet weak var text5Label: UILabel!
+
     @IBAction func nextButton(_ sender: Any) {
         print("pushed")
         let storyboard = UIStoryboard(name: "Test3", bundle: nil)
@@ -27,6 +34,10 @@ class Test2ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        textUILable.text = text
+        text1Label.text = text1
+        text2Label.text = text2
+        text3Label.text = text3
+        text4Label.text = text4
+        text5Label.text = text5
     }
 }
