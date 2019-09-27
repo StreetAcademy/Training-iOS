@@ -1,41 +1,151 @@
 import UIKit
 
-
-// bodyの定義
 let body: String = """
 {
 "item": {
-"name": "tarukawaTest",
-"category": "POSTTest",
-"price": 2000
+"name": "Create",
+"category": "PUT",
+"price": 0706
 }
 }
 """
-// Data型からJson型に変換
-let jsonData = body.data(using: .utf8)
 
-// URLを変数(itemUrl)に格納
-var itemUrl = URL(string: "https://item-server.herokuapp.com/delete?id=1521")!
-// 取得したいAPIリクエストのURLを変数urlRequestに格納
-var urlRequest = URLRequest(url: itemUrl)
-// httpメソッドの定義
-urlRequest.httpMethod = "DELETE"
-// Headerの定義
-urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-// Bodyの定義
-urlRequest.httpBody = jsonData
-
-// 通信の開始
-print("通信スタート")
-
-// 魔法の一行
-let session: URLSession = URLSession(configuration: URLSessionConfiguration.default)
-
-let task: URLSessionTask = session.dataTask(with: urlRequest) { data, urlResponse, error in
-    print("checkout1")
-    if let response = urlResponse as? HTTPURLResponse {
-        print(response.statusCode)
+// fetch
+func fetchItems() {
+    // Data型からJson型に変換
+    let jsonData = body.data(using: .utf8)
+    
+    // URLを変数(itemUrl)に格納
+    let itemUrl = URL(string: "https://item-server.herokuapp.com/items")!
+    // 取得したいAPIリクエストのURLを変数urlRequestに格納
+    var urlRequest = URLRequest(url: itemUrl)
+    // httpメソッドの定義
+    urlRequest.httpMethod = "GET"
+    // Headerの定義
+    urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+    // Bodyの定義
+    urlRequest.httpBody = jsonData
+    
+    // 通信の開始
+    print("通信スタート")
+    
+    // 魔法の一行
+    let session: URLSession = URLSession(configuration: URLSessionConfiguration.default)
+    
+    let task: URLSessionTask = session.dataTask(with: urlRequest) { data, urlResponse, error in
+        print("checkout1")
+        if let response = urlResponse as? HTTPURLResponse {
+            print(response.statusCode)
+        }
     }
+    
+    task.resume()
 }
 
-task.resume()
+// POST
+func createItem() {
+    // Data型からJson型に変換
+    let jsonData = body.data(using: .utf8)
+    
+    // URLを変数(itemUrl)に格納
+    let itemUrl = URL(string: "https://item-server.herokuapp.com/create")!
+    // 取得したいAPIリクエストのURLを変数urlRequestに格納
+    var urlRequest = URLRequest(url: itemUrl)
+    // httpメソッドの定義
+    urlRequest.httpMethod = "POST"
+    // Headerの定義
+    urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+    // Bodyの定義
+    urlRequest.httpBody = jsonData
+    
+    // 通信の開始
+    print("通信スタート")
+    
+    // 魔法の一行
+    let session: URLSession = URLSession(configuration: URLSessionConfiguration.default)
+    
+    let task: URLSessionTask = session.dataTask(with: urlRequest) { data, urlResponse, error in
+        print("checkout1")
+        if let response = urlResponse as? HTTPURLResponse {
+            print(response.statusCode)
+        }
+    }
+    task.resume()
+}
+
+// PUT
+func updateItem() {
+    // Data型からJson型に変換
+    let jsonData = body.data(using: .utf8)
+    
+    // URLを変数(itemUrl)に格納
+    // quernの値は都度変更
+    let itemUrl = URL(string: "https://item-server.herokuapp.com/update?id=1571")!
+    // 取得したいAPIリクエストのURLを変数urlRequestに格納
+    var urlRequest = URLRequest(url: itemUrl)
+    // httpメソッドの定義
+    urlRequest.httpMethod = "PUT"
+    // Headerの定義
+    urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+    // Bodyの定義
+    urlRequest.httpBody = jsonData
+    
+    // 通信の開始
+    print("通信スタート")
+    
+    // 魔法の一行
+    let session: URLSession = URLSession(configuration: URLSessionConfiguration.default)
+    
+    let task: URLSessionTask = session.dataTask(with: urlRequest) { data, urlResponse, error in
+        print("checkout1")
+        if let response = urlResponse as? HTTPURLResponse {
+            print(response.statusCode)
+        }
+    }
+    task.resume()
+}
+
+// DELETE
+func deleteItem() {
+    // Data型からJson型に変換
+    let jsonData = body.data(using: .utf8)
+    
+    // URLを変数(itemUrl)に格納
+    // quernの値は都度変更
+    let itemUrl = URL(string: "https://item-server.herokuapp.com/delete?id=1581")!
+    // 取得したいAPIリクエストのURLを変数urlRequestに格納
+    var urlRequest = URLRequest(url: itemUrl)
+    // httpメソッドの定義
+    urlRequest.httpMethod = "DELETE"
+    // Headerの定義
+    urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+    // Bodyの定義
+    urlRequest.httpBody = jsonData
+    
+    // 通信の開始
+    print("通信スタート")
+    
+    // 魔法の一行
+    let session: URLSession = URLSession(configuration: URLSessionConfiguration.default)
+    
+    let task: URLSessionTask = session.dataTask(with: urlRequest) { data, urlResponse, error in
+        print("checkout1")
+        if let response = urlResponse as? HTTPURLResponse {
+            print(response.statusCode)
+        }
+    }
+    task.resume()
+}
+
+updateItem()
+
+//// bodyの定義
+//let body: String = """
+//{
+//"item": {
+//"name": "tarukawaTest",
+//"category": "POSTTest",
+//"price": 2000
+//}
+//}
+//"""
