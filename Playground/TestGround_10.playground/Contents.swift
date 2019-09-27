@@ -7,19 +7,7 @@ let urlString = "https://api.github.com/search/repositories?q=swift"
 guard let url: URL = URL(string: urlString) else {
     fatalError()
 }
-
-// URLComponents例
-guard let sampleUrl: URL = URL(string: "https://api.github.com/search/repositories") else {
-    fatalError()
-}
-
-guard var components: URLComponents = URLComponents(url: sampleUrl, resolvingAgainstBaseURL: false) else {
-    fatalError()
-}
-
-// queryのKeyとValueを取得
-components.queryItems = [URLQueryItem(name: "q", value: "ruby")]
-print(components.url)
+let request:URLRequest = URLRequest(url: url)
 
 // 通信開始します
 print("start")
@@ -27,12 +15,7 @@ print("start")
 // これは魔法の一行と。
 let session: URLSession = URLSession(configuration: URLSessionConfiguration.default)
 
-// components.urlがnilかどうか判定する。nilでなければsessionUrlに格納される
-guard let sessionUrl = components.url else {
-    fatalError()
-}
-
-let task: URLSessionTask = session.dataTask(with: sessionUrl) { data, urlResponse, error in
+let task: URLSessionTask = session.dataTask(with: request) { data, urlResponse, error in
     print(error.debugDescription)
     
     if let response = urlResponse as? HTTPURLResponse {
