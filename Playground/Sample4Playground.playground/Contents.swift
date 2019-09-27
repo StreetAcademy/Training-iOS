@@ -7,7 +7,7 @@ let body: String = """
 "item": {
 "name": "hogehoge",
 "category": "training",
-"price": 1000
+"price": 2000
 }
 }
 """
