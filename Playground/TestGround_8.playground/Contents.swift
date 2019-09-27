@@ -40,6 +40,7 @@ let task: URLSessionTask = session.dataTask(with: url) { data, urlResponse, erro
             print("idはIntじゃなかった")
         }
         
+        // itemsの中のfull_Nameを表示
         if let items = jsonArray["items"] as? [[String: Any]] {
             items.forEach {
                 item in
@@ -48,14 +49,16 @@ let task: URLSessionTask = session.dataTask(with: url) { data, urlResponse, erro
                 }
             }
         } else {
-            print("fullNameはBoolじゃなかった")
+            print("fullNameはStringじゃなかった")
         }
         
+        // items -> ownerの中のavatar_urlを表示
         if let items = jsonArray["items"] as? [[String: Any]] {
             items.forEach {
                 item in
                 if let owner = item["owner"] as? [String: Any] {
                     if let avatarUrl = owner["avatar_url"] as? String {
+                        // URL型に変換
                         let avatarUrlCast = URL(string: avatarUrl)
                         avatarUrlCast
                     }
@@ -74,7 +77,7 @@ let task: URLSessionTask = session.dataTask(with: url) { data, urlResponse, erro
                 }
             }
         } else {
-            print("fullNameはBoolじゃなかった")
+            print("stargazers_countはIntじゃなかった")
         }
         
         
