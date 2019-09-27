@@ -17,8 +17,9 @@ guard var components: URLComponents = URLComponents(url: sampleUrl, resolvingAga
 }
 
 // queryのKeyとValueを取得
-components.queryItems = [URLQueryItem(name: "q", value: " ruby")]
+components.queryItems = [URLQueryItem(name: "q", value: "ruby")]
 print(components.url)
+
 
 // 通信開始します
 
@@ -41,55 +42,59 @@ let task: URLSessionTask = session.dataTask(with: url) { data, urlResponse, erro
             return
         }
         if let items = jsonArray["items"] as? [[String: Any]] {
-            items.forEach {
-                item in
-                if let id = item["id"] as? Int {
+            items.forEach { item in
+                if let id = item["id"] as? Int,
+                    let fullName = item["full_name"] as? String,
+                    let srtargazersCount = item["stargazers_count"] as? Int,
+                    let owner = item["owner"] as? [String: Any],
+                    let avatarUrl = owner["avatar_url"] as? String {
                     print("idは \(id)")
+                    print("full_nameは \(fullName)")
+                    print("stargazers_countは \(srtargazersCount)")
+                    let avatarUrlCast = URL(string: avatarUrl)
+                    avatarUrlCast
                 }
             }
-        } else {
-            print("idはIntじゃなかった")
         }
         
-        // itemsの中のfull_Nameを表示
-        if let items = jsonArray["items"] as? [[String: Any]] {
-            items.forEach {
-                item in
-                if let fullName = item["full_name"] as? String {
-                    print("full_nameは \(fullName)")
-                }
-            }
-        } else {
-            print("fullNameはStringじゃなかった")
-        }
+        //        // itemsの中のfull_Nameを表示
+        //        if let items = jsonArray["items"] as? [[String: Any]] {
+        //            items.forEach {
+        //                item in
+        //                if let fullName = item["full_name"] as? String {
+        //                    print("full_nameは \(fullName)")
+        //                }
+        //            }
+        //        } else {
+        //            print("fullNameはStringじゃなかった")
+        //        }
+        //
         
         // items -> ownerの中のavatar_urlを表示
-        if let items = jsonArray["items"] as? [[String: Any]] {
-            items.forEach {
-                item in
-                if let owner = item["owner"] as? [String: Any] {
-                    if let avatarUrl = owner["avatar_url"] as? String {
-                        // URL型に変換
-                        let avatarUrlCast = URL(string: avatarUrl)
-                        avatarUrlCast
-                    }
-                }
-            }
-            
-        } else {
-            print("avatarUrlはURLじゃなかった")
-        }
+        //        if let items = jsonArray["items"] as? [[String: Any]] {
+        //            items.forEach { item in
+        //                if  {
+        //                    // URL型に変換
+        //                    let avatarUrlCast = URL(string: avatarUrl)
+        //                    avatarUrlCast
+        //                }
+        //            }
+        //
+        //        } else {
+        //            print("avatarUrlはURLじゃなかった")
+        //        }
+        //
         
-        if let items = jsonArray["items"] as? [[String: Any]] {
-            items.forEach {
-                item in
-                if let srtargazersCount = item["stargazers_count"] as? Int {
-                    print("stargazers_countは \(srtargazersCount)")
-                }
-            }
-        } else {
-            print("stargazers_countはIntじゃなかった")
-        }
+        //        if let items = jsonArray["items"] as? [[String: Any]] {
+        //            items.forEach {
+        //                item in
+        //                if let srtargazersCount = item["stargazers_count"] as? Int {
+        //                    print("stargazers_countは \(srtargazersCount)")
+        //                }
+        //            }
+        //        } else {
+        //            print("stargazers_countはIntじゃなかった")
+        //        }
         
         
     } catch let error {
