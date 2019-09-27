@@ -8,6 +8,15 @@ guard let url: URL = URL(string: urlString) else {
     fatalError()
 }
 
+// URLComponents例
+guard let sampleUrl: URL = URL(string: "https://api.github.com/search/repositories") else {
+    fatalError()
+}
+guard var components: URLComponents = URLComponents(url: sampleUrl, resolvingAgainstBaseURL: false) else {
+    fatalError()
+}
+components.queryItems = [URLQueryItem(name: "q", value: "swift")]
+print(components.url)
 
 // 通信開始します
 
