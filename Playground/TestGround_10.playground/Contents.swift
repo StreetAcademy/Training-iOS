@@ -77,12 +77,12 @@ func createItem() {
 func updateItem() {
     // Data型からJson型に変換
     let jsonData = body.data(using: .utf8)
-    
-    // URLを変数(itemUrl)に格納
-    // quernの値は都度変更
-    let itemUrl = URL(string: "https://item-server.herokuapp.com/update?id=1571")!
-    // 取得したいAPIリクエストのURLを変数urlRequestに格納
-    var urlRequest = URLRequest(url: itemUrl)
+    // URLComponentsを用意
+    var urlComponents = URLComponents(url: URL(string: "https://item-server.herokuapp.com/update")!, resolvingAgainstBaseURL: false)
+    urlComponents?.queryItems = [URLQueryItem(name: "id", value: "1571")]
+    // unwrap
+    guard let url = urlComponents?.url else { fatalError() }
+    var urlRequest = URLRequest(url: url)
     // httpメソッドの定義
     urlRequest.httpMethod = "PUT"
     // Headerの定義
@@ -109,12 +109,12 @@ func updateItem() {
 func deleteItem() {
     // Data型からJson型に変換
     let jsonData = body.data(using: .utf8)
-    
-    // URLを変数(itemUrl)に格納
-    // quernの値は都度変更
-    let itemUrl = URL(string: "https://item-server.herokuapp.com/delete?id=1581")!
-    // 取得したいAPIリクエストのURLを変数urlRequestに格納
-    var urlRequest = URLRequest(url: itemUrl)
+    // URLComponentsを用意
+    var urlComponents = URLComponents(url: URL(string: "https://item-server.herokuapp.com/delete")!, resolvingAgainstBaseURL: false)
+    urlComponents?.queryItems = [URLQueryItem(name: "id", value: "1581")]
+    // unwrap
+    guard let url = urlComponents?.url else { fatalError() }
+    var urlRequest = URLRequest(url: url)
     // httpメソッドの定義
     urlRequest.httpMethod = "DELETE"
     // Headerの定義
